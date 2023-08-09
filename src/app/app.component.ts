@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FieldType} from "./Components/container/container.component";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'saborosofront';
+  protected readonly FieldType = FieldType;
 }
