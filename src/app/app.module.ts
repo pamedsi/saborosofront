@@ -6,6 +6,8 @@ import { ContainerComponent } from './Components/container/container.component';
 import { MenuItemComponent } from './Components/menu-item/menu-item.component';
 import {NgOptimizedImage} from "@angular/common";
 import { MenuComponent } from './Components/menu/menu.component';
+import { DishComponent } from './Components/dish/dish.component';
+import { DishListComponent } from './Components/dish-list/dish-list.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { MenuComponent } from './Components/menu/menu.component';
     ContainerComponent,
     MenuItemComponent,
     MenuComponent,
+    DishComponent,
+    DishListComponent,
   ],
   imports: [
     BrowserModule,

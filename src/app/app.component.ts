@@ -13,4 +13,7 @@ export class AppComponent {
   onSelectChange(event: Event) {
     this.numberOfHelloWorlds = +(event.target as HTMLSelectElement).value;
   }
+
+  protected readonly Number = Number;
+  protected readonly String = String;
 }
