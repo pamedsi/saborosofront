@@ -1,7 +1,7 @@
 .container {
   background-color: #082847;
-  width: 40rem;
-  min-height: 3rem;
+  width: 30rem;
+  min-height: 2rem;
   border-radius: 1.5rem;
   color: white;
   margin: 0.5rem;
@@ -13,5 +13,6 @@
 }
 
 .container-itens {
-
+  background-color: transparent;
+  margin: 0.2rem;
 }

@@ -8,12 +8,17 @@
     <app-menu-item  pic="../assets/galinha.jpg" title="Galinha" price="10"></app-menu-item>
     <app-menu-item  pic="../assets/ovo.jpg" title="Ovo" price="10"></app-menu-item>
     <app-menu-item  pic="../assets/porco.webp" title="Porco" price="10"></app-menu-item>
+    <app-menu-item  pic="../assets/boi.webp" title="Boi" price="10"></app-menu-item>
+    <app-menu-item  pic="../assets/galinha.jpg" title="Galinha" price="10"></app-menu-item>
   </app-menu>
 
-<!--  <app-container [content]="'Quantas quentinhas você vai querer?'"-->
-<!--                 [selectedField]="FieldType.Select"-->
-<!--                 [numberOfOptions]="10"-->
-<!--  ></app-container>-->
+  <app-container [content]="'Quantas quentinhas você vai querer?'"
+                 [selectedField]="FieldType.Select"
+                 [numberOfOptions]="10"
+                 (change)="onSelectChange($event)"
+  ></app-container>
+
+  <div *ngFor="let i of [].constructor(numberOfHelloWorlds)">Hello World</div>
 
 </body>
 

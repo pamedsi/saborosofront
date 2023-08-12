@@ -9,4 +9,8 @@ import {FieldType} from "./Components/container/container.component";
 export class AppComponent {
   title = 'saborosofront';
   protected readonly FieldType = FieldType;
+  public numberOfHelloWorlds: number = 0;
+  onSelectChange(event: Event) {
+    this.numberOfHelloWorlds = +(event.target as HTMLSelectElement).value;
+  }
 }

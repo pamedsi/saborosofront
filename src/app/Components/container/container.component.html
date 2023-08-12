@@ -1,5 +1,5 @@
 <section class="container" >
-  {{ content }}
+  <div class="container-itens" >{{ content }}</div>
   <ng-content></ng-content>
   <ng-container *ngIf="selectedField === FieldType.Radio || selectedField === FieldType.Checkbox || selectedField === FieldType.Text">
     <input type="{{selectedField}}" class="container-itens">
