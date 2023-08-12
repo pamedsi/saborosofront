@@ -3,14 +3,7 @@
   <h1 class="title">Saboroso Gourmet</h1>
 
   <app-container [content]="'Cardápio de hoje:'"></app-container>
-  <app-menu>
-    <app-menu-item  pic="../assets/boi.webp" title="Boi" price="10"></app-menu-item>
-    <app-menu-item  pic="../assets/galinha.jpg" title="Galinha" price="10"></app-menu-item>
-    <app-menu-item  pic="../assets/ovo.jpg" title="Ovo" price="10"></app-menu-item>
-    <app-menu-item  pic="../assets/porco.webp" title="Porco" price="10"></app-menu-item>
-    <app-menu-item  pic="../assets/boi.webp" title="Boi" price="10"></app-menu-item>
-    <app-menu-item  pic="../assets/galinha.jpg" title="Galinha" price="10"></app-menu-item>
-  </app-menu>
+  <app-menu>  </app-menu>
 
   <app-container [content]="'Quantas quentinhas você vai querer?'"
                  [selectedField]="FieldType.Select"
@@ -19,6 +12,17 @@
   ></app-container>
 
   <app-dish-list numberOfDishes="{{numberOfDishes}}"></app-dish-list>
+
+  <app-adress-getter></app-adress-getter>
+
+  <app-container>
+      <div>Como podemos te contatar?</div>
+      <div>(Whatsapp, telegram, email ou número pra ligar)</div>
+      <textarea rows="5" cols="35"></textarea>
+      <button>Confirmar pedido</button>
+  </app-container>
+
+
 
 </body>
 

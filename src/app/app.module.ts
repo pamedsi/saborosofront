@@ -9,6 +9,7 @@ import { MenuComponent } from './Components/menu/menu.component';
 import { DishComponent } from './Components/dish/dish.component';
 import { DishListComponent } from './Components/dish-list/dish-list.component';
 import {FormsModule} from "@angular/forms";
+import { AdressGetterComponent } from './Components/adress-getter/adress-getter.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {FormsModule} from "@angular/forms";
     MenuComponent,
     DishComponent,
     DishListComponent,
+    AdressGetterComponent,
   ],
   imports: [
     BrowserModule,

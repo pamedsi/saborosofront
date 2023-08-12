@@ -1,6 +1,6 @@
 .container {
   background-color: #082847;
-  width: 30rem;
+  width: 35rem;
   min-height: 2rem;
   border-radius: 1rem;
   color: white;
@@ -13,6 +13,6 @@
 }
 
 .container-itens {
-  background-color: transparent;
+  background-color: inherit;
   margin: 0.2rem;
 }
