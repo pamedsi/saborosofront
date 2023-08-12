@@ -45,17 +45,17 @@
   </app-container>
 
   <app-container [content]="'Será completa?'" >
-    <section class="is-full">
+    <table class="is-full">
     (Com arroz, feijão, macarrão e farofa de bacon)
       <div class="if-full-option">
         <input type="radio" name="if-full" id="yes" [(ngModel)]="isFull" [value]="true">
         <label>Sim</label>
       </div>
       <div class="if-full-option">
-        <input type="radio" name="if-full" id="no" [(ngModel)]="isFull" [value]="false">
+        <input type="radio" name="if-full" id ="no" [(ngModel)]="isFull" [value]="false">
         <label>Não</label>
       </div>
-    </section>
+    </table>
 
     <section *ngIf="!isFull" class="half-way">
       <p>O que deseja remover do prato?</p>
@@ -83,19 +83,19 @@
   <app-container [content]="'Qual será o acompanhamento?'">
   <table class="accompaniments">
     <tr>
-      <td><input type="radio" name="protein" id="fries"></td>
+      <td><input type="radio" name="accompaniment" id="fries"></td>
       <td>Batata frita</td>
     </tr>
     <tr>
-      <td><input type="radio" name="protein" id="salad"></td>
+      <td><input type="radio" name="accompaniment" id="salad"></td>
       <td>Salada de legumes</td>
     </tr>
     <tr>
-      <td><input type="radio" name="protein" id="mayonnaise"></td>
+      <td><input type="radio" name="accompaniment" id="mayonnaise"></td>
       <td>Maionese</td>
     </tr>
     <tr>
-      <td><input type="radio" name="protein" id="no-accompaniment"></td>
+      <td><input type="radio" name="accompaniment" id="no-accompaniment"></td>
       <td>Sem Acompanhamento</td>
     </tr>
   </table>
