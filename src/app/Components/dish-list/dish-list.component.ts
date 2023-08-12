@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-dish-list',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./dish-list.component.css']
 })
 export class DishListComponent {
-
+  @Input() numberOfDishes: string
+  listLength(lengthOfArray: string): number[] {
+    return Array.from({length: Number(lengthOfArray)}, (_, i) => i + 1)
+  }
 }

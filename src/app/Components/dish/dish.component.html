@@ -1,10 +1,59 @@
-<section>
-  salve quebrada: {{id}}
+<section class="about-dish">
+  <app-container
+    [content]="'Qual o tamanho da ' + id + 'ª quentinha?'">
+    <div class="dish-size-options">
+      <div>
+        <input type="radio" id="p" name="dish-size">
+        <label for="p">P (350ml)</label>
+      </div>
+      <div>
+        <input type="radio" id="g" name="dish-size">
+        <label for="g">G (750ml)</label>
+      </div>
+    </div>
+  </app-container>
+
+  <app-container
+    [content]="'Qual a proteína da ' + id + 'ª quentinha?'" >
+    <table class="prices">
+      <tr>
+        <td><input type="radio" name="protein" id="boi"></td>
+        <td>Boi</td>
+        <td>R$ 10,00</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="protein" id="galinha"></td>
+        <td>Galinha</td>
+        <td>R$ 10,00</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="protein" id="ovo"></td>
+        <td>Ovo</td>
+        <td>R$ 10,00</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name  ="protein" id="porco"></td>
+        <td>Porco</td>
+        <td>R$ 10,00</td>
+      </tr>
+    </table>
+  </app-container>
+
+  <app-container [content]="'Será completa?'" >
+    <div class="is-full">
+    (Com arroz, feijão, macarrão e farofa de bacon)
+      <div class="if-full-option">
+        <input type="radio" name="if-full" id="yes">
+        <label>Sim</label>
+      </div>
+      <div class="if-full-option">
+        <input type="radio" name="if-full" id="no">
+        <label>Não</label>
+      </div>
+    </div>
+  </app-container>
+
+
+
+
 </section>
-
-<!--  <app-container-->
-<!--    [content]="'Comece escolhendo o tamanho da ' + id + 'ª marmita:'"-->
-<!--    [selectedField]="FieldType.Radio"-->
-
-<!--  ></app-container>-->
-

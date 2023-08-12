@@ -7,6 +7,6 @@ import { FieldType } from "../container/container.component";
   styleUrls: ['./dish.component.css']
 })
 export class DishComponent {
-  @Input() id: string
+  @Input() id: number
   protected readonly FieldType = FieldType;
 }

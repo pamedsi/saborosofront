@@ -18,13 +18,8 @@
                  (change)="onSelectChange($event)"
   ></app-container>
 
-<!--  <app-dish-->
-<!--    *ngFor="let i of [].constructor(numberOfHelloWorlds)"-->
-<!--    [id]="i"-->
-<!--  ></app-dish>-->
-  <div *ngFor="let i of [].constructor(numberOfHelloWorlds)" >
-    <input type="radio" id="opcao1" name="opcoes" value="{{i}}"> olha o   {{i}}
-  </div>
+  <app-dish-list numberOfDishes="{{numberOfDishes}}"></app-dish-list>
+
 </body>
 
 

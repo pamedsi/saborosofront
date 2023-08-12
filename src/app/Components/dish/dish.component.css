@@ -1,0 +1,19 @@
+* {
+  background-color: transparent;
+}
+
+.dish-size-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.is-full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table.prices td:nth-child(3) {
+  padding-left: 4rem;
+}
