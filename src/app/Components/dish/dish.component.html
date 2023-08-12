@@ -1,7 +1,7 @@
 <section class="about-dish">
   <app-container
     [content]="'Qual o tamanho da ' + id + 'ª quentinha?'">
-    <div class="dish-size-options">
+    <section class="dish-size-options">
       <div>
         <input type="radio" id="p" name="dish-size">
         <label for="p">P (350ml)</label>
@@ -10,7 +10,7 @@
         <input type="radio" id="g" name="dish-size">
         <label for="g">G (750ml)</label>
       </div>
-    </div>
+    </section>
   </app-container>
 
   <app-container
@@ -36,24 +36,95 @@
         <td>Porco</td>
         <td>R$ 10,00</td>
       </tr>
+      <tr>
+        <td><input type="radio" name  ="protein" id="none"></td>
+        <td>Sem carne</td>
+        <td>R$ 10,00</td>
+      </tr>
     </table>
   </app-container>
 
   <app-container [content]="'Será completa?'" >
-    <div class="is-full">
+    <section class="is-full">
     (Com arroz, feijão, macarrão e farofa de bacon)
       <div class="if-full-option">
-        <input type="radio" name="if-full" id="yes">
+        <input type="radio" name="if-full" id="yes" [(ngModel)]="isFull" [value]="true">
         <label>Sim</label>
       </div>
       <div class="if-full-option">
-        <input type="radio" name="if-full" id="no">
+        <input type="radio" name="if-full" id="no" [(ngModel)]="isFull" [value]="false">
         <label>Não</label>
       </div>
-    </div>
+    </section>
+
+    <section *ngIf="!isFull" class="half-way">
+      <p>O que deseja remover do prato?</p>
+      <table class="food-to-remove">
+        <tr>
+          <td><input type="checkbox" name="protein" id="rice"></td>
+          <td>Arroz</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="protein" id="bean"></td>
+          <td>Feijão</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="protein" id="spaghetti"></td>
+          <td>Macarrão</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="protein" id="farofa"></td>
+          <td>Farofa de bacon</td>
+        </tr>
+      </table>
+    </section>
   </app-container>
 
+  <app-container [content]="'Qual será o acompanhamento?'">
+  <table class="accompaniments">
+    <tr>
+      <td><input type="radio" name="protein" id="fries"></td>
+      <td>Batata frita</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="protein" id="salad"></td>
+      <td>Salada de legumes</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="protein" id="mayonnaise"></td>
+      <td>Maionese</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="protein" id="no-accompaniment"></td>
+      <td>Sem Acompanhamento</td>
+    </tr>
+  </table>
 
+  </app-container>
+
+  <app-container [content]="'Algum adicional? (opcional)'">
+    <table class="additional">
+      <tr>
+        <td><input type="checkbox" id="egg"></td>
+        <td>Ovo</td>
+        <td>R$ 2,00</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="soda"></td>
+        <td>Coca-cola em lata</td>
+        <td>R$ 6,00</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="drink"></td>
+        <td>Guaravita</td>
+        <td>R$ 2,00</td>
+      </tr>
+      </table>
+  </app-container>
+
+  <app-container [content]="'Alguma observação?'" [selectedField]="FieldType.TextArea">
+    <div>Ponto da carne (bem passada ou mal passada), da gema do ovo, etc.</div>
+  </app-container>
 
 
 </section>

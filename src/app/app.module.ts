@@ -8,6 +8,7 @@ import {NgOptimizedImage} from "@angular/common";
 import { MenuComponent } from './Components/menu/menu.component';
 import { DishComponent } from './Components/dish/dish.component';
 import { DishListComponent } from './Components/dish-list/dish-list.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DishListComponent } from './Components/dish-list/dish-list.component';
   ],
   imports: [
     BrowserModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

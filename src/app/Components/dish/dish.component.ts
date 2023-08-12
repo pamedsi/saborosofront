@@ -8,5 +8,7 @@ import { FieldType } from "../container/container.component";
 })
 export class DishComponent {
   @Input() id: number
+  isFull = true
   protected readonly FieldType = FieldType;
+
 }
