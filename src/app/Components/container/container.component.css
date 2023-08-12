@@ -1,7 +1,7 @@
 .container {
   background-color: #082847;
   width: 40rem;
-  height: 4rem;
+  min-height: 3rem;
   border-radius: 1.5rem;
   color: white;
   margin: 0.5rem;
