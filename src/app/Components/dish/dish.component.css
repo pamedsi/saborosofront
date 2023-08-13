@@ -1,5 +1,21 @@
-* {
-  background-color: transparent;
+.about-dish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  /*position: absolute;*/
+  margin-left: 0.5rem;
+  border-radius: 1rem;
+  width: 11rem;
+  padding: 0.5rem 0.2rem 0.5rem 1rem;
+  background-color: #a90000;
+}
+
+.dish-question {
+  background-color: #ff6bf6 !important;
+  margin-left: 2rem;
 }
 
 .dish-size-options {
