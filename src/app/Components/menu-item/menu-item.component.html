@@ -1,5 +1,15 @@
-<div class="menu-item">
-  <img ngSrc="{{ pic }}" alt="{{ title }}" height=100 width=100 priority="true"/>
-  <div class="title">{{ title }}</div>
-  <div class="prive"> R{{ price | currency }}</div>
-</div>
+<table class="menu-item">
+  <tr>
+    <td>
+      <img ngSrc="{{ pic }}" alt="{{ title }}" height="150" width="220" priority="true"/>
+    </td>
+    <td>
+        <div class="title">{{ title }}</div>
+        <div class="price"> R{{ price | currency }}</div>
+    </td>
+  </tr>
+
+
+
+
+</table>
