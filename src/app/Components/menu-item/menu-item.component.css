@@ -1,5 +1,4 @@
 .menu-item {
-  position: relative;
   margin: 0.5rem;
   padding: 0.7rem;
   border: 0.1rem solid;
@@ -12,29 +11,13 @@
   font-weight: bold;
 }
 
-.price {
-  position: absolute;
-  padding: 0 1rem 0.5rem 0;
-  bottom: 0;
-  right: 0;
-}
-
-tr {
-  background-color: black;
-}
-
 .description{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 img {
   object-fit: cover;
   border-radius: 1.5rem;
   padding-right: 0.5rem;
-}
-
-table.menu-item td:nth-child(2) {
-  padding-left: 1rem;
 }
