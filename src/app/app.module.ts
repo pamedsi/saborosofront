@@ -9,7 +9,9 @@ import { MenuComponent } from './Components/menu/menu.component';
 import { DishComponent } from './Components/dish/dish.component';
 import { DishListComponent } from './Components/dish-list/dish-list.component';
 import {FormsModule} from "@angular/forms";
-import { AdressGetterComponent } from './Components/adress-getter/adress-getter.component';
+import { AddressGetterComponent } from './Components/address-getter/address-getter.component';
+import { NumberOfDishesComponent } from './Components/number-of-dishes/number-of-dishes.component';
+import { ContactGetterComponent } from './Components/contact-getter/contact-getter.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AdressGetterComponent } from './Components/adress-getter/adress-getter.
     MenuComponent,
     DishComponent,
     DishListComponent,
-    AdressGetterComponent,
+    AddressGetterComponent,
+    NumberOfDishesComponent,
+    ContactGetterComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,26 +2,12 @@
   <h3 class="subtitle">Bem-vindo ao</h3>
   <h1 class="title">Saboroso Gourmet</h1>
 
-  <app-container [content]="'Cardápio de hoje:'"></app-container>
+  <app-container>Cardápio de hoje:</app-container>
   <app-menu>  </app-menu>
-
-  <app-container [content]="'Quantas quentinhas você vai querer?'"
-                 [selectedField]="FieldType.Select"
-                 [numberOfOptions]="10"
-                 (change)="onSelectChange($event)"
-  ></app-container>
-
+  <app-number-of-dishes (change)="onSelectChange($event)" ></app-number-of-dishes>
   <app-dish-list numberOfDishes="{{numberOfDishes}}"></app-dish-list>
-
-  <app-adress-getter></app-adress-getter>
-
-  <app-container>
-      <div>Como podemos te contatar?</div>
-      <div>(Whatsapp, telegram, email ou número pra ligar)</div>
-      <textarea rows="5" cols="35"></textarea>
-      <button>Confirmar pedido</button>
-  </app-container>
-
+  <app-address-getter></app-address-getter>
+  <app-contact-getter></app-contact-getter>
 
 
 </body>

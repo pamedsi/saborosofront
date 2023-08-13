@@ -1,15 +1,3 @@
 <section class="container" >
-  <div class="container-itens" >{{ content }}</div>
   <ng-content></ng-content>
-  <ng-container *ngIf="selectedField === FieldType.Radio || selectedField === FieldType.Checkbox || selectedField === FieldType.Text">
-    <input type="{{selectedField}}" class="container-itens">
-  </ng-container>
-  <ng-container *ngIf="selectedField === FieldType.Select">
-    <select class="container-itens">
-      <option *ngFor="let option of generateNumberOptions(numberOfOptions!)">{{ option }}</option>
-    </select>
-  </ng-container>
-  <ng-container *ngIf="selectedField === FieldType.TextArea">
-    <textarea class="container-itens" rows="5" cols="35"></textarea>
-  </ng-container>
 </section>

@@ -1,0 +1,22 @@
+* {
+  background-color: transparent;
+}
+
+.address-example, .obs {
+  padding-bottom: 0.2rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  font-size: 0.85rem;
+}
+
+a {
+  font-weight: bold;
+}
+
+textarea {
+  padding: 0.5rem;
+}
+
+textarea::placeholder{
+  color: #cbcb17;
+}

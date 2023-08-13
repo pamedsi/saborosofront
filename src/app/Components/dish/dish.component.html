@@ -1,6 +1,6 @@
 <section class="about-dish">
-  <app-container
-    [content]="'Qual o tamanho da ' + id + 'ª quentinha?'">
+  <app-container>
+    <div>Qual o tamanho da quentinha?</div>
     <section class="dish-size-options">
       <div>
         <input type="radio" id="p" name="dish-size">
@@ -13,8 +13,8 @@
     </section>
   </app-container>
 
-  <app-container
-    [content]="'Qual a proteína da ' + id + 'ª quentinha?'" >
+  <app-container>
+    <div>Qual proteína?</div>
     <table class="prices">
       <tr>
         <td><input type="radio" name="protein" id="boi"></td>
@@ -44,7 +44,8 @@
     </table>
   </app-container>
 
-  <app-container [content]="'Será completa?'" >
+  <app-container>
+    <div>Será completa?</div>
     <table class="is-full">
     (Com arroz, feijão, macarrão e farofa de bacon)
       <div class="if-full-option">
@@ -80,7 +81,8 @@
     </section>
   </app-container>
 
-  <app-container [content]="'Qual será o acompanhamento?'">
+  <app-container>
+    <div>Qual será o acompanhamento?</div>
   <table class="accompaniments">
     <tr>
       <td><input type="radio" name="accompaniment" id="fries"></td>
@@ -102,7 +104,8 @@
 
   </app-container>
 
-  <app-container [content]="'Algum adicional? (opcional)'">
+  <app-container>
+    <div>Algum adicional? (opcional)</div>
     <table class="additional">
       <tr>
         <td><input type="checkbox" id="egg"></td>
@@ -122,8 +125,10 @@
       </table>
   </app-container>
 
-  <app-container [content]="'Alguma observação?'" [selectedField]="FieldType.TextArea">
+  <app-container>
+    <div>Alguma observação?</div>
     <div>Ponto da carne (bem passada ou mal passada), da gema do ovo, etc.</div>
+    <textarea></textarea>
   </app-container>
 
 

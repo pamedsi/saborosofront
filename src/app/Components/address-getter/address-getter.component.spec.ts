@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdressGetterComponent } from './adress-getter.component';
+import { AdressGetterComponent } from './address-getter.component';
 
 describe('AdressGetterComponent', () => {
   let component: AdressGetterComponent;
