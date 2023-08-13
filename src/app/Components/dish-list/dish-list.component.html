@@ -1,3 +1,4 @@
 <section class="dish-list">
+  <div *ngIf="Number(numberOfDishes)">Agora vamos por partes:</div>
   <app-dish *ngFor="let i of listLength(numberOfDishes)" [id]=i ></app-dish>
 </section>

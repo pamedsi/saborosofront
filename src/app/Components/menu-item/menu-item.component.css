@@ -1,14 +1,36 @@
-.menu-item  {
+.menu-item {
+  position: relative;
   margin: 0.5rem;
   padding: 0.7rem;
   border: 0.1rem solid;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
 }
+
+img {
+  padding-right: 0.5rem;
+}
+
 
 .title {
   font-weight: bold;
+}
+
+.price {
+  position: absolute;
+  padding: 0 1rem 1rem 0;
+  bottom: 0;
+  right: 0;
+}
+
+tr {
+  background-color: black;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
