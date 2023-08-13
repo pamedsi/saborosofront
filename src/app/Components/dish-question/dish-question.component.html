@@ -2,12 +2,12 @@
   <caption class="question">Qual o tamanho da quentinha?</caption>
   <div class="options">
     <div>
-    <input type="radio" id="p" name="dish-size">
-    <label for="p">P (350ml)</label>
+    <input type="radio" id="{{id}}p" name="{{id}}dish-size">
+    <label for="{{id}}p">P (350ml)</label>
     </div>
     <div>
-      <input type="radio" id="g" name="dish-size">
-      <label for="g">G (750ml)</label>
+      <input type="radio" id="{{id}}g" name="{{id}}dish-size">
+      <label for="{{id}}g">G (750ml)</label>
     </div>
   </div>
 </section>
@@ -16,27 +16,27 @@
   <caption>Qual proteína?</caption>
   <table class="prices">
     <tr>
-      <td><input type="radio" name="protein" id="boi"></td>
+      <td><input type="radio" name="{{id}}protein" id="boi{{id}}"></td>
       <td>Boi</td>
       <td class="price" >R$ 10,00</td>
     </tr>
     <tr>
-      <td><input type="radio" name="protein" id="galinha"></td>
+      <td><input type="radio" name="{{id}}protein" id="galinha{{id}}"></td>
       <td>Galinha</td>
       <td class="price">R$ 10,00</td>
     </tr>
     <tr>
-      <td><input type="radio" name="protein" id="ovo"></td>
+      <td><input type="radio" name="{{id}}protein" id="ovo{{id}}"></td>
       <td>Ovo</td>
       <td class="price">R$ 10,00</td>
     </tr>
     <tr>
-      <td><input type="radio" name  ="protein" id="porco"></td>
+      <td><input type="radio" name  ="protein" id="porco{{id}}"></td>
       <td>Porco</td>
       <td class="price">R$ 10,00</td>
     </tr>
     <tr>
-      <td><input type="radio" name  ="protein" id="none"></td>
+      <td><input type="radio" name  ="protein" id="none{{id}}"></td>
       <td>Sem carne</td>
       <td class="price">R$ 10,00</td>
     </tr>
@@ -48,12 +48,12 @@
   <div class="obs">(Com arroz, feijão, macarrão e farofa de bacon)</div>
     <table class="is-full">
       <div class="if-full-option">
-        <input type="radio" name="if-full" id="yes" [(ngModel)]="isFull" [value]="true">
-        <label>Sim</label>
+        <input type="radio" name="{{id}}if-full" id="yes{{id}}" [(ngModel)]="isFull" [value]="true">
+        <label for="yes{{id}}" >Sim</label>
       </div>
       <div class="if-full-option">
-        <input type="radio" name="if-full" id ="no" [(ngModel)]="isFull" [value]="false">
-        <label>Não</label>
+        <input type="radio" name="{{id}}if-full" id ="no{{id}}" [(ngModel)]="isFull" [value]="false">
+        <label for="no{{id}}">Não</label>
       </div>
     </table>
 
@@ -61,19 +61,19 @@
       <p>O que deseja remover do prato?</p>
       <table class="food-to-remove">
         <tr>
-          <td><input type="checkbox" name="protein" id="rice"></td>
+          <td><input type="checkbox" name="{{id}}protein" id="rice{{id}}"></td>
           <td>Arroz</td>
         </tr>
         <tr>
-          <td><input type="checkbox" name="protein" id="bean"></td>
+          <td><input type="checkbox" name="{{id}}protein" id="bean{{id}}"></td>
           <td>Feijão</td>
         </tr>
         <tr>
-          <td><input type="checkbox" name="protein" id="spaghetti"></td>
+          <td><input type="checkbox" name="{{id}}protein" id="spaghetti{{id}}"></td>
           <td>Macarrão</td>
         </tr>
         <tr>
-          <td><input type="checkbox" name="protein" id="farofa"></td>
+          <td><input type="checkbox" name="{{id}}protein" id="farofa{{id}}"></td>
           <td>Farofa de bacon</td>
         </tr>
       </table>
@@ -86,19 +86,19 @@
 
   <table class="accompaniments">
     <tr>
-      <td><input type="radio" name="accompaniment" id="fries"></td>
+      <td><input type="radio" name="{{id}}accompaniment" id="fries{{id}}"></td>
       <td>Batata frita</td>
     </tr>
     <tr>
-      <td><input type="radio" name="accompaniment" id="salad"></td>
+      <td><input type="radio" name="{{id}}accompaniment" id="salad{{id}}"></td>
       <td>Salada de legumes</td>
     </tr>
     <tr>
-      <td><input type="radio" name="accompaniment" id="mayonnaise"></td>
+      <td><input type="radio" name="{{id}}accompaniment" id="mayonnaise{{id}}"></td>
       <td>Maionese</td>
     </tr>
     <tr>
-      <td><input type="radio" name="accompaniment" id="no-accompaniment"></td>
+      <td><input type="radio" name="{{id}}accompaniment" id="no-accompaniment{{id}}"></td>
       <td>Sem Acompanhamento</td>
     </tr>
   </table>
@@ -109,25 +109,24 @@
   <caption>Algum adicional? (opcional)</caption>
   <table class="additional">
     <tr>
-      <td><input type="checkbox" id="egg"></td>
+      <td><input type="checkbox" id="egg{{id}}"></td>
       <td>Ovo</td>
       <td class="price">R$ 2,00</td>
     </tr>
     <tr>
-      <td><input type="checkbox" id="soda"></td>
+      <td><input type="checkbox" id="soda{{id}}"></td>
       <td>Coca-cola em lata</td>
       <td class="price">R$ 6,00</td>
     </tr>
     <tr>
-      <td><input type="checkbox" id="drink"></td>
+      <td><input type="checkbox" id="drink{{id}}"></td>
       <td>Guaravita</td>
       <td class="price">R$ 2,00</td>
     </tr>
   </table>
 </section>
 
-
-<section class="dish-question" *ngIf="typeOfQuestion === TypeOfQuestion.obs" id="obs">
+<section class="dish-question" *ngIf="typeOfQuestion === TypeOfQuestion.obs" id="obs{{id}}">
     <caption>Alguma observação?</caption>
     <textarea placeholder="Ex: Carne bem passada, gema mole e sem cebola." ></textarea>
 </section>

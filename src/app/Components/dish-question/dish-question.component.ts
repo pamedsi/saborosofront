@@ -17,6 +17,7 @@ export enum TypeOfQuestion {
 export class DishQuestionComponent {
   @Input() question: string
   @Input() typeOfQuestion: TypeOfQuestion
+  @Input() id: number
   isFull = true;
   protected readonly TypeOfQuestion = TypeOfQuestion;
 }
